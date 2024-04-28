@@ -1,30 +1,29 @@
 <script setup>
-
+import TheNavBar from './components/TheNavBar.vue';
+import TheHeader from './components/TheHeader.vue';
+import TheSocialBar from './components/TheSocialBar.vue';
 </script>
 
 <template>
 <main class="main-container">
-  <nav id="nav">
-    <!-- <img src="./img/25068-6-bubbles-file.png" alt="logo" id="logo">
-    <label for="logo">Bubbling</label> -->
-    <button class="btn hover">sign-up</button>
-    <button class="btn hover">sign-up</button>
-    <button class="btn hover">sign-up</button>
-    <button class="btn hover">sign-up</button>
-  </nav>
+  <TheNavBar/>
+  <TheHeader/>
+  <TheSocialBar/>
 </main>
 </template>
 
 <style scoped>
+
 .main-container {
     width: 100%;
-    height: 100%;
-    
+    height: 100vh;  
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    overflow: hidden;
+    box-shadow: inset 0 0 500px 100px #111;
   }
 
-  button{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 111px;
-  }
+  
 </style>
