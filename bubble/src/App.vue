@@ -2,6 +2,7 @@
 import TheNavBar from './components/TheNavBar.vue';
 import TheHeader from './components/TheHeader.vue';
 import TheSocialBar from './components/TheSocialBar.vue';
+import TheContact from './components/TheContact.vue';
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import TheSocialBar from './components/TheSocialBar.vue';
   <TheNavBar/>
   <TheHeader/>
   <TheSocialBar/>
+  <TheContact/>
 </main>
 </template>
 
