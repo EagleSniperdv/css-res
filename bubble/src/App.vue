@@ -3,6 +3,8 @@ import TheNavBar from './components/TheNavBar.vue';
 import TheHeader from './components/TheHeader.vue';
 import TheSocialBar from './components/TheSocialBar.vue';
 import TheContact from './components/TheContact.vue';
+import TheFooter from './components/TheFooter.vue';
+import TheBubble from './components/TheBubble.vue';
 </script>
 
 <template>
@@ -11,6 +13,8 @@ import TheContact from './components/TheContact.vue';
   <TheHeader/>
   <TheSocialBar/>
   <TheContact/>
+  <TheFooter/>
+  <TheBubble/>
 </main>
 </template>
 
