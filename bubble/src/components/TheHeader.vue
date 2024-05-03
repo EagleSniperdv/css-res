@@ -2,7 +2,7 @@
     <header id="header">
         <h4>Hello and Welcome to</h4>
         <h1>CSS3 Animations <br> & <br> Transitions</h1>
-        <button class="btn btn-plus hover">Animate</button>
+        <button class="btn-plus hover">Animate</button>
     </header>
 </template>
 
@@ -15,6 +15,7 @@
     color: #fff;
     display: flex;
     flex-direction: column;
+    justify-items: center;
 }
 h1{
     font-size: 4rem;
@@ -38,6 +39,15 @@ h1{
     }
     
 }
+button {
+    display: flex;
+    width: 9rem;
+    height: 3rem;
+    align-self: center;
+    border-radius: 16px;
+    padding-top: 16px;
+    padding-left: 32px;
+}
 
 .btn-plus{
     animation: plus 3s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
@@ -45,5 +55,6 @@ h1{
 
 .btn-plus:hover{
     animation: none;
+    background-color: blue;
 }
 </style>

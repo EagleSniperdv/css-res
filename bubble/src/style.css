@@ -31,3 +31,82 @@ body {
 .box-shadow:hover{
     z-index: 6;
 }
+
+/* desktop */
+
+@media (min-width:1280px) {
+    #nav,#header {
+        max-width: 1280px;
+    }
+}
+
+
+/* Tablet */
+
+@media (max-width:800px) {
+    #nav label {
+        font-size: 1.2rem;
+    }
+
+    #nav .btn{ 
+        font-size: 0.8rem;
+        color: black;
+        border: 2px solid yellow;
+    }
+
+    #header {
+        width: 250px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    #header h1 {
+        font-size: 3.5rem;
+    }
+
+    #header h4 {
+        font-size: 1.5rem;
+    }
+
+    #social,
+    #contact {
+        height: 60vh;
+        top: 20%;
+    }
+}
+
+/* Tablet landscape */
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    #header {
+        left: 10%;
+    }
+    #social,#contact {
+        height: 60vh;
+        top: 20%;
+        border: 1px solid #333;
+    }
+}
+
+/* Phone Mobile */
+@media (max-width:450px) {
+    /* nav */
+    #nav {
+        width: 100%;
+        padding: .5rem;
+    }
+
+    #nav,img {
+        height: 50px;
+        width: 45px;
+    }
+
+    #header h1{
+        font-size: small ;
+        text-align: center;
+    }
+}

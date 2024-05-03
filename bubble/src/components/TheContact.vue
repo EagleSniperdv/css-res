@@ -19,7 +19,7 @@
     height: 80vh;
     border-radius: 10px 0px 0px 10px;
     transition: 0.3s ease;
-    border: 1px solid ;
+    
 }
 svg {
     height: 50px;
@@ -29,5 +29,10 @@ svg {
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
+}
+@media (max-width:450px) {
+    svg {
+        height: 25px;
+    }
 }
 </style>

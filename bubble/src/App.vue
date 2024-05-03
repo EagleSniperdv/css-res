@@ -21,15 +21,17 @@ import TheBubble from './components/TheBubble.vue';
 <style scoped>
 
 .main-container {
-    width: 100%;
-    height: 100vh;  
-    background-position: center;
-    background-size: cover;
-    position: relative;
+  height: 100vh;  
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  
+  overflow: hidden;
+  box-shadow: inset 0 0 500px 100px #111;
+}
 
-    overflow: hidden;
-    box-shadow: inset 0 0 500px 100px #111;
-  }
+
 
   
 </style>
