@@ -60,6 +60,14 @@
     flex-direction: row;
     justify-content: center;
 }
+
+@media (min-width:500px) {
+  .contact-container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
 </style>
 
 <script setup>

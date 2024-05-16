@@ -87,4 +87,19 @@ h2{
     }
 }
 
+@media (min-width:500px) {
+  header{
+    display: flex;
+    height: 100%;
+  }
+
+  .header-text,#header-img{
+    height: 100vh;
+  }
+  .contact-container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
 </style>
