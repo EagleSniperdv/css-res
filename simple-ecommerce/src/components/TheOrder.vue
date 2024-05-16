@@ -15,7 +15,7 @@
                 <button class="btn btn-order">Add to Order</button>
             </div>
 
-            <div id="Slide" class="card-body">
+            <!-- <div id="Slide" class="card-body">
                 <h4 class="card-title">King Burger</h4>
                 <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quisquam deleniti doloribus voluptatem labore animi pariatur libero ad perferendis quidem.</p>
                 <div class="break"></div>
@@ -37,15 +37,81 @@
                     <label for="Amount"> Amount</label>
                 </div>
                 <button class="btn btn-order">Add to Order</button>
-            </div>
+            </div> -->
 
         </div>
+        <button class="btn prev" onclick="plusSlide(-1,1)">&#10094;</button>
+        <button class="btn next" onclick="plusSlide(1,1)">&#10095;</button>
     </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      slideIndex: 1,
+      slides: null
+    };
+  },
+  mounted() {
+    this.showSlides(this.slideIndex);
+  },
+  methods: {
+    plusSlide(n) {
+      this.showSlides(this.slideIndex + n);
+    },
+    currentSlide(n) {
+      this.showSlides(n);
+    },
+    showSlides(n) {
+      this.slideIndex = n;
+      this.slides = document.querySelectorAll('.Slide');
+      console.log(this.slides);
+      if (this.slideIndex > this.slides.length) {
+        this.slideIndex = 1;
+      }
+      if (this.slideIndex < 1) {
+        this.slideIndex = this.slides.length;
+      }
+      this.slides.forEach(function(slide) {
+        slide.style.display = "none";
+      });
+      this.slides[this.slideIndex - 1].style.display = "block";
+    }
+  }
+};
+</script>
+
+
 
 <style scoped>
 h2{
     font-family: var(--font-family_title);
+}
+
+.orders-section{
+    position: relative;
+}
+
+.prev,.next{
+    position: absolute;
+    cursor: pointer;
+    top: 60%;
+    transition: 0.6s ease;
+    opacity: 0.7;
+}
+
+.prev{
+    left: 3px;
+}
+
+.next{
+    right: 3px;
+}
+
+.prev:hover,.next:hover{
+    background-color: var(--prim-t_c);
+    color: black;
 }
 
 .orders-section h2 span{
