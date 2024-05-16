@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Tilt+Neon&display=swap');
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 5px;
+  font-style: normal;
+}
+
+*,::before,::after {
+  margin: o;
+  padding: 0;
+}
+
+a,li {
+  list-style: none;
+  text-decoration: none ;
+}
