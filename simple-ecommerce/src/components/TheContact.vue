@@ -129,8 +129,43 @@ h2{
     margin-bottom: 2rem;
 }
 
+@media (min-width:700px) {
+    #Contact {
+        width: 650px;
+        margin: auto;
+    }
+
+    .contact-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        font-size: var(--font-size_md);
+    }
+
+    .contact-container .contact-form {
+        width: 640px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .input-container input,
+    .input-container select,
+    .input-container textarea {
+        height: 40px;
+        font-size: var(--font-size_md);
+    }
+
+    .contact-form button[type="submit"] {
+        font-size: var(--font-size_md);
+        padding: 1rem 0;
+    }
+}
+
 </style>
-
-<script>
-
-</script>

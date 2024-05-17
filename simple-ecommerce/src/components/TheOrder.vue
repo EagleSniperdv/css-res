@@ -16,7 +16,7 @@
             </div>
 
             <!-- <div id="Slide" class="card-body">
-                <h4 class="card-title">King Burger</h4>
+                <h4 class="card-title">King Burger2</h4>
                 <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quisquam deleniti doloribus voluptatem labore animi pariatur libero ad perferendis quidem.</p>
                 <div class="break"></div>
                 <div class="card-price">$15.99</div>
@@ -47,38 +47,38 @@
 
 <script>
 export default {
-  data() {
+data() {
     return {
-      slideIndex: 1,
-      slides: null
+    slideIndex: 1,
+    slides: null
     };
-  },
-  mounted() {
+},
+mounted() {
     this.showSlides(this.slideIndex);
-  },
-  methods: {
+},
+methods: {
     plusSlide(n) {
-      this.showSlides(this.slideIndex + n);
+    this.showSlides(this.slideIndex + n);
     },
     currentSlide(n) {
-      this.showSlides(n);
+    this.showSlides(n);
     },
     showSlides(n) {
-      this.slideIndex = n;
-      this.slides = document.querySelectorAll('.Slide');
-      console.log(this.slides);
-      if (this.slideIndex > this.slides.length) {
+    this.slideIndex = n;
+    this.slides = document.querySelectorAll('.Slide');
+    console.log(this.slides);
+    if (this.slideIndex > this.slides.length) {
         this.slideIndex = 1;
-      }
-      if (this.slideIndex < 1) {
-        this.slideIndex = this.slides.length;
-      }
-      this.slides.forEach(function(slide) {
-        slide.style.display = "none";
-      });
-      this.slides[this.slideIndex - 1].style.display = "block";
     }
-  }
+    if (this.slideIndex < 1) {
+        this.slideIndex = this.slides.length;
+    }
+    this.slides.forEach(function(slide) {
+        slide.style.display = "none";
+    });
+    this.slides[this.slideIndex - 1].style.display = "block";
+    }
+}
 };
 </script>
 
@@ -167,6 +167,49 @@ h2{
     border-radius: 5px;
     text-align: center;
     padding: 0.5rem;
+}
+
+@media (min-width:700px) {
+    .card-body{
+        width: 600px;
+    }
+
+    .card-title,.card-price {
+        font-size: var(--font-size_xl);
+    }
+
+    .card-description {
+        font-size: var(--font-size_md);
+    }
+
+    .input-container input[type="number"] {
+        width: 60px;
+        font-size: var(--font-size_md);
+    }
+
+    .input-container label,
+    .btn-order,
+    .prev,
+    .next {
+        font-size: var(--font-size_md);
+    }
+
+    .btn-order {
+        margin-bottom: 1.5rem;
+    }
+
+    .prev {
+        left: 20px;
+    }
+
+    .next {
+        right: 20px;
+    }
+
+    h2.text_sub-title {
+        font-size: calc(var(--font-size_xl) * 1.5);
+        margin-bottom: 6rem;
+    }
 }
 
 @keyframes liney {

@@ -100,5 +100,19 @@
     color: var(--prim-t_c);
 }
 
+@media (min-width:700px) {
+    .navigation {
+        padding-top: 1rem;
+    }
+
+    .nav-socials {
+        margin-top: 55vh;
+    }
+
+    .nav-link {
+        font-size: var(--font-size_xl);
+    }
+}
+
 
 </style>

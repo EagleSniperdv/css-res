@@ -102,4 +102,31 @@ h2{
 .menu-container li span{
     color: yellow;
 }
+
+@media (min-width:700px) {
+    .menu-container {
+        max-width: 650px;
+    }
+
+    #Menus h2 {
+        margin-top: 3rem;
+    }
+
+    .Breakfast-container,
+    .Lunch-container,
+    .Dinner-container {
+        grid-template-columns: 1fr 3fr;
+        font-size: var(--font-size_md);
+    }
+
+    .menu-container aside {
+        font-size: calc(var(--font-size_md) * 1.4);
+        letter-spacing: 2px;
+    }
+
+    .menu-container ul {
+        background-color: var(--prim-bg_c);
+        padding: 1rem;
+    }
+}
 </style>

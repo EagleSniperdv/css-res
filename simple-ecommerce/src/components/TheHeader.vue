@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header id="Home">
         <div class="bg-img"></div>
         <div class="overlay">
             <h1 class="text-title">YOUR FOOD <span>TO GO</span></h1>
@@ -47,5 +47,17 @@ header{
 
 .overlay .btn a{
     color: var(--sec-t_c);
+}
+
+@media (min-width:700px) {
+    .overlay h1{
+        font-size: calc(var(--font-size_xl) * 2.8);
+    }
+
+    .overlay .btn{
+        margin-top: 10rem;
+        font-size: var(--font-size_md);
+        padding: 1rem 1.5rem;
+    }
 }
 </style>
